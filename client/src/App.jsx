@@ -13,7 +13,7 @@ class App extends React.Component {
         datasets: [
           {
             label: 'Bitcoin Price',
-            price: [],
+            data: [],
             fill: true,
             lineTension: 0.5,
             backgroundColor: 'rgba(75,192,192,1)',
@@ -36,14 +36,13 @@ class App extends React.Component {
     //  current: res.data.bpi.USD.rate
     axios.get('https://api.coindesk.com/v1/bpi/historical/close.json')
         .then((res) => {
-          // console.log('res data.bpi: ', res.data.bpi);
           this.setState({
             data: {
               labels: Object.keys(res.data.bpi),
               datasets: [
                 {
                   label: 'Bitcoin Price',
-                  price: Object.values(res.data.bpi),
+                  data: Object.values(res.data.bpi),
                   fill: true,
                   lineTension: 0.5,
                   backgroundColor: 'rgba(75,192,192,1)',

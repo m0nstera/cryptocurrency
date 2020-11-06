@@ -7,23 +7,22 @@ import {Line} from 'react-chartjs-2';
         <div>
         <Line
           data={data}
-          // type='line'
           options={{
             title:{
               display:true,
               text:'Crypto',
               fontSize:20
             },
-            // scales: {
-            //   yAxes: [
-            //     {
-            //       ticks: {
-            //         suggestedMin: 0,
-            //         suggestedMax: 100
-            //       }
-            //     }
-            //   ]
-            // },
+            scales: {
+              yAxes: [
+                {
+                  ticks: {
+                    suggestedMin: 0,
+                    suggestedMax: 100
+                  }
+                }
+              ]
+            },
             legend: {
               display:true,
               position:'bottom',
