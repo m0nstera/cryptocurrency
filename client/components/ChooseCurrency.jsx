@@ -7,45 +7,55 @@ import {
   DropdownButton,
   Row
 } from 'react-bootstrap';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 const ChooseCurrency = ({prices}) => {
   const [currency, setCurrency] = useState('USD');
-  console.log('prices: ', prices);
+  const [selected, setSelected] = useState(false);
 
   const handleSelect = (evtKey) => {
-    console.log('ekey: ', evtKey);
     setCurrency(evtKey);
+    setSelected(true);
   };
 
   return (
     <Container>
-      <Dropdown>
-        <Dropdown.Toggle variant="dark" id="dropdown-basic">
+      <Dropdown className="currency-dropdown">
+        <Dropdown.Toggle variant="dark">
           Select Currency
         </Dropdown.Toggle>
-
         <Dropdown.Menu>
-          {console.log('ekey: ', Object.keys(prices))}
+          {/* {console.log('obj.key prices: ', Object.keys(prices))} */}
           {Object.keys(prices).map((priceType, i) => (
               <Dropdown.Item
                 eventKey={priceType}
                 onSelect={handleSelect}>
                 {prices[i].code}
-                {console.log("PT", priceType)}
+                {/* {console.log("PT", priceType)} */}
               </Dropdown.Item>
           ))}
         </Dropdown.Menu>
       </Dropdown>
 
       <Col>
-          <Card>
+      {selected &&
+          <Card className="selected-currency">
             <Card.Body>
-              <Card.Title>{currency}</Card.Title>
+             <Card.Title>
+             {Object.entries(prices).map((currencyData) =>
+                  currencyData[0] === currency &&
+                  currencyData[1].code
+                )}
+             </Card.Title>
               <Card.Text>
-                {Object.entries(prices).map((priceData) =>)}
+                {Object.entries(prices).map((currencyData) =>
+                  currencyData[0] === currency &&
+                  currencyData[1].rate
+                )}
               </Card.Text>
             </Card.Body>
-          </Card>
+          </Card>}
         </Col>
     </Container>
   );

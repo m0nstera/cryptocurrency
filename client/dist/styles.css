@@ -1,0 +1,19 @@
+h1 {
+  display: flex;
+  justify-content: center
+}
+
+.currency-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected-currency {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: ;
+}

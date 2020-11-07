@@ -5,7 +5,6 @@ import {Container, Col, Row} from 'react-bootstrap';
 import Chart from '../components/Chart.jsx';
 import ChooseCurrency from '../components/ChooseCurrency.jsx';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -69,12 +68,12 @@ class App extends React.Component {
     let {data, prices} = this.state;
     return (
         <Container>
+          <h1>Cryptocurrency Tracking Tool</h1>
             <Row>
               <Col>
                 <ChooseCurrency
                   prices={prices}
                 />
-              {/* CURRENT PRICE: {`${currentPrice}`} */}
               </Col>
             </Row>
             <Row>

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd server/ && node server.js",
-    "build": "webpack -d --watch"
+    "build": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "chart.js": "^2.9.4",
+    "chartjs-plugin-zoom": "^0.7.7",
     "cors": "^2.8.5",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
