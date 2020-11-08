@@ -23,7 +23,8 @@ class App extends React.Component {
           }
         ]
       },
-      prices: []
+      prices: [],
+      current: []
     };
     this.getData = this.getData.bind(this);
   }
@@ -39,7 +40,8 @@ class App extends React.Component {
       .then((res) => {
         console.log(res.data.bpi.USD.rate);
         this.setState({
-          prices: Object.values(res.data.bpi)
+          prices: Object.values(res.data.bpi),
+          current: [res.data.bpi.USD.rate, res.data.bpi.GBP.rate, res.data.bpi.EUR.rate]
         })
       })
     axios.get('https://api.coindesk.com/v1/bpi/historical/close.json')
@@ -65,7 +67,7 @@ class App extends React.Component {
   }
 
   render() {
-    let {data, prices} = this.state;
+    let {data, prices, current} = this.state;
     return (
         <Container>
           <h1>Cryptocurrency Tracking Tool</h1>
@@ -73,6 +75,7 @@ class App extends React.Component {
               <Col>
                 <ChooseCurrency
                   prices={prices}
+                  current={current}
                 />
               </Col>
             </Row>
