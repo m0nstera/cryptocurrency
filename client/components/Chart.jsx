@@ -6,8 +6,8 @@ import {Container} from 'react-bootstrap';
     // zoomArgument: true,
 
     return (
-        <Container>
-        <Line
+        <Container className="chart-container">
+        <Line className="chart-container"
             data={data}
             options={{
               title:{
