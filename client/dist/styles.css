@@ -1,6 +1,11 @@
+.bigboi{
+ margin: 20px;
+}
+
 h1 {
   display: flex;
-  justify-content: center
+  justify-content: left;
+  font-family: 'Scope One', serif;
 }
 
 .currency-dropdown {
@@ -10,10 +15,142 @@ h1 {
   justify-content: center;
 }
 
-.selected-currency {
-  width: 200px;
+.card {
+  width: 180px;
+  font-family: 'Scope One', serif;
+}
+
+.accord-container {
+  width: 180px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: ;
+  font-family: 'Scope One', serif;
 }
+
+.chart-container {
+  font-family: 'Scope One', serif;
+}
+
+
+
+
+
+
+/* <Accordion defaultActiveKey="0">
+  <Card>
+    <Card.Header>
+    {Object.keys(prices).map((priceType, i) => (
+      <Accordion.Toggle as={Button} variant="link" eventKey="0">
+
+      </Accordion.Toggle>
+    </Card.Header>
+
+    <Accordion.Collapse eventKey="0">
+      <Card.Body>Hello! I'm the body</Card.Body>
+    </Accordion.Collapse>
+  </Card>
+
+
+
+  <Card>
+    <Card.Header>
+      <Accordion.Toggle as={Button} variant="link" eventKey="1">
+      {prices[i].code}
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="1">
+      <Card.Body>Hello! I'm another body</Card.Body>
+    </Accordion.Collapse>
+  </Card>
+</Accordion> */
+
+
+
+
+
+
+
+
+/* <Container>
+<Accordion defaultActiveKey="0">
+  <Card>
+    <Card.Header>
+    {Object.keys(prices).map((priceType, i) => (
+      <Accordion.Toggle
+      as={Button} variant="link"
+        eventKey={priceType}
+        onSelect={handleSelect}>
+        {prices[i].code}
+      </Accordion.Toggle>
+  ))}
+    </Card.Header>
+
+    <Accordion.Collapse eventKey="0">
+    <Card.Body>
+       <Card.Header>
+      <Accordion.Toggle as={Button} variant="link" eventKey="1">
+             {Object.entries(prices).map((currencyData) =>
+                  currencyData[0] === currency &&
+                  currencyData[1].code
+                )}
+      </Accordion.Toggle>
+    </Card.Header>
+
+    <Accordion.Collapse eventKey="1">
+      <Card.Body>
+                {Object.entries(prices).map((currencyData) =>
+                  currencyData[0] === currency &&
+                  currencyData[1].rate
+                )}
+</Card.Body>
+    </Accordion.Collapse>
+
+  </Card> */
+  /* <Card>
+    <Card.Header>
+      <Accordion.Toggle as={Button} variant="link" eventKey="1">
+        Click me!
+      </Accordion.Toggle>
+    </Card.Header>
+
+
+    <Accordion.Collapse eventKey="1">
+      <Card.Body>Hello! I'm another body</Card.Body>
+    </Accordion.Collapse>
+  </Card> */
+/* </Accordion> */
+
+
+
+
+
+
+
+
+
+
+      /* <Col>
+      {selected &&
+          <Card className="selected-currency">
+            <Card.Body>
+             <Card.Title>
+             {Object.entries(prices).map((currencyData) =>
+                  currencyData[0] === currency &&
+                  currencyData[1].code
+                )}
+             </Card.Title>
+              <Card.Text>
+                {Object.entries(prices).map((currencyData) =>
+                  currencyData[0] === currency &&
+                  currencyData[1].rate
+                )}
+              </Card.Text>
+            </Card.Body>
+          </Card>}
+        </Col> */
+    /* </Container>
+  );
+}
+
+export default ChooseCurrency; */
