@@ -9,7 +9,6 @@ import {
 const ChooseCurrency = ({prices, current}) => {
   // console.log('prices: ', Object.entries(prices));
 
-
   const mappedListHead = Object.keys(prices).map((priceType, i) => (
     <Accordion.Toggle
       as={Button} variant="dark"
@@ -21,7 +20,7 @@ const ChooseCurrency = ({prices, current}) => {
 
   return (
     <Container className="accord-container">
-      <Row className="accord-row">
+      <Row xs={1} md={4} lg={6} className="accord-row">
           <Accordion>
             <Card className="card">
               <Card.Header>

@@ -16,12 +16,12 @@ h1 {
 }
 
 .card {
-  width: 180px;
+  width: 190px;
   font-family: 'Scope One', serif;
 }
 
 .accord-container {
-  width: 180px;
+  width: 190px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -30,6 +30,7 @@ h1 {
 
 .chart-container {
   font-family: 'Scope One', serif;
+  margin-top: 20px;
 }
 
 
