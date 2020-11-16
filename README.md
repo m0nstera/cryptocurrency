@@ -1,6 +1,6 @@
-# cryptocurrency
+# Cryptocurrency tracking app
 
-Cryptocurrency tracking app
+Single-page app for viewing the historical price data for any cryptocurrency.
 
 ## Familiar with Git?
 
