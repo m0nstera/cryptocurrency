@@ -6,22 +6,32 @@ Cryptocurrency tracking app
 
 Getting started, install dependencies, then start the with the following:
 
+
+### $ git clone https://github.com/m0nstera/cryptocurrency.git
 ```bash
-$ git clone https://github.com/m0nstera/cryptocurrency.git
+git clone is a Git command line utility which is used to target an existing repository and create a clone, or copy of the target repository
 ```
 
+
+### $ cd into cryptocurrency
 ```bash
-$ cd into cryptocurrency
+change directories, which means moving the command prompt into a different folder
 ```
 
+
+### $ npm install
 ```bash
-$ npm install
+downloads a package and it's dependencies.
 ```
 
+
+### $ npm start
 ```bash
-$ npm start
+npm will run the start script for you and start your application with your special configuration options
 ```
 
+
+### $ npm run build
 ```bash
-$ npm run build
+npm run build creates a build directory with a production build of your app.
 ```
