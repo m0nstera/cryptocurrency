@@ -4,7 +4,7 @@ Single-page app for viewing the historical price data for any cryptocurrency.
 
 ## Familiar with Git?
 
-Getting started, install dependencies, then start the with the following:
+Getting started with the following:
 
 
 ### $ git clone https://github.com/m0nstera/cryptocurrency.git
