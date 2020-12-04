@@ -13,11 +13,6 @@ git clone is a Git command line utility which is used to target an existing repo
 ```
 
 
-### $ cd into cryptocurrency
-```bash
-change directories, which means moving the command prompt into a different folder.
-```
-
 
 ### $ npm install
 ```bash
