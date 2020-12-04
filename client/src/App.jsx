@@ -67,7 +67,7 @@ class App extends React.Component {
   render() {
     let {data, prices, current} = this.state;
     return (
-        <Container className="bigboi">
+        <Container className="top-lvl-container">
           <h1 xs={1} md={3} lg={6}>Cryptocurrency Tracking Tool</h1>
             <Row>
               <Col>

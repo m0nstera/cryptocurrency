@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 const cors = require('cors');
 
-app.use(express.static('../client/dist')); // Host your dist folder up to the server
+app.use(express.static('../client/dist'));
 app.use(express.json()); // Alternative to BodyParser
 app.use(cors());
 
