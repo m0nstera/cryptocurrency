@@ -1,40 +1,54 @@
 .top-lvl-container{
- margin: 20px;
- display: block;
- margin-left: auto;
- margin-right: auto;
-}
-
-h1 {
-  /* display: flex;
-  justify-content: left; */
-  font-family: 'Scope One', serif;
-}
-
-.currency-dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.card {
-  width: 190px;
-  font-family: 'Scope One', serif;
-}
-
-.accord-container {
-  width: 190px;
+  margin: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Scope One', serif;
+ }
+
+ h1 {
+
+   font-family: 'Scope One', serif;
+   /* display: flex;
+   justify-content: left; */
+   /* display: flex;
+   align-items: center;
+   justify-content: center; */
+ }
+
+ .currency-dropdown {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+/*
+ .card {
+   width: 190px;
+   font-family: 'Scope One', serif;
+ } */
+ .card-header {
+  width: 190px;
 }
 
-.chart-container {
-  font-family: 'Scope One', serif;
-  margin-top: 20px;
+ .accord-container {
+   width: 190px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   font-family: 'Scope One', serif;
+ }
+
+ .chart-container {
+   font-family: 'Scope One', serif;
+   margin-top: 20px;
+ }
+
+ .test {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 
 
