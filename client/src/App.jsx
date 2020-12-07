@@ -26,7 +26,6 @@ class App extends React.Component {
       prices: [],
       current: []
     };
-    // this.getData = this.getData.bind(this);
   }
 
   componentDidMount() {
@@ -37,6 +36,7 @@ class App extends React.Component {
     axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
       .then((res) => {
         // console.log('usd', res.data.bpi.USD.rate);
+        console.log("CURRENT: ", Object.values(res.data.bpi).map((currency) => Number(currency.rate)))
         this.setState({
           prices: Object.values(res.data.bpi),
           current: Object.values(res.data.bpi).map((currency) => currency.rate)
@@ -68,20 +68,20 @@ class App extends React.Component {
     let {data, prices, current} = this.state;
     return (
         <Container className="top-lvl-container">
-          <h1 xs={1} md={3} lg={6}>Cryptocurrency Tracking Tool</h1>
-            <Row>
-              <Col>
-                <ChooseCurrency
-                  prices={prices}
-                  current={current}
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Chart
-                data={data}/>
-            </Row>
-        </Container>
+        <h1 xs={1} md={3} lg={6}>Cryptocurrency Tracking Tool</h1>
+          <Row>
+            <Col>
+              <ChooseCurrency
+                prices={prices}
+                current={current}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Chart
+              data={data}/>
+          </Row>
+      </Container>
     );
   };
 }
