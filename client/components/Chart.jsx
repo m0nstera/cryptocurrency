@@ -1,9 +1,8 @@
 import React from 'react';
 import {Line} from 'react-chartjs-2';
-import {Container} from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 
   const Chart = ({data}) => {
-    // zoomArgument: true,
 
     return (
         <Container className="chart-container">
